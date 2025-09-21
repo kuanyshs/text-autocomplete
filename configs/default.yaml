@@ -1,0 +1,44 @@
+seed: 123
+device: cuda
+
+data:
+  train_path: data/train.txt
+  val_path: data/val.txt
+  test_path: data/test.txt
+
+vocab:
+  max_size: 10000
+  min_freq: 100
+
+model:
+  emb_dim: 512
+  hidden_dim: 512
+  num_layers: 1
+  dropout: 0.2
+
+train:
+  max_len: 32
+  batch_size: 256
+  lr: 0.002
+  weight_decay: 1.0e-5
+  epochs: 1
+  clip_norm: 1.0
+  quarter: 0.25
+  do_sample: true
+  top_p: 0.8
+  temperature: 0.9
+  num_show: 5
+  ckpt_dir: models
+  save_best: true
+  use_plot: true
+
+transformer_eval:
+  model_name: distilgpt2
+  max_length: 32
+  quarter: 0.25
+  top_k: 50
+  top_p: 0.8
+  temperature: 0.9
+  num_show: 256
+  subset_n: 1000
+  example_ids: [11, 75, 229, 84, 83]

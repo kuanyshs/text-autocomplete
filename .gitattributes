@@ -1,0 +1,13 @@
+*.bingit filter=lfs diff=lfs merge=lfs -text
+*.safetensorsgit filter=lfs diff=lfs merge=lfs -text
+models/*git filter=lfs diff=lfs merge=lfs -text
+checkpoints/*git filter=lfs diff=lfs merge=lfs -text
+*.txt filter=lfs diff=lfs merge=lfs -text
+lfs filter=lfs diff=lfs merge=lfs -text
+track filter=lfs diff=lfs merge=lfs -text
+*.pklgit filter=lfs diff=lfs merge=lfs -text
+*.pthgit filter=lfs diff=lfs merge=lfs -text
+*.ptgit filter=lfs diff=lfs merge=lfs -text
+*.h5git filter=lfs diff=lfs merge=lfs -text
+*.modelgit filter=lfs diff=lfs merge=lfs -text
+data/*git filter=lfs diff=lfs merge=lfs -text
