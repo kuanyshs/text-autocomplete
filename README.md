@@ -1,4 +1,4 @@
-# Text Autocomplete (LSTM + GPT?2 baseline)
+# Text Autocomplete (LSTM + GPT-2 baseline)
 
 ## Коротко
 - Задача: автодополнение текста (next-token prediction) на коротких сообщениях.
